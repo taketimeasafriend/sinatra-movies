@@ -3,7 +3,12 @@ require 'movie'
 
 
 get('/movies') do
-  @movie = Movie.new
-  @movie.title = "Jaws"
+  @movies = []
+  @movies[0] = Movie.new
+  @movies[0].title = "Jaws"
   erb :index
+end
+
+get('/movies/new') do
+  erb :new
 end
