@@ -1,3 +1,5 @@
+# ruby -I lib  app.rb
+
 require 'sinatra'
 require 'movie'
 
@@ -11,4 +13,8 @@ end
 
 get('/movies/new') do
   erb :new
+end
+
+post('/movies/create') do
+  "received #{params.inspect}"
 end
