@@ -1,0 +1,9 @@
+---
+0: !ruby/object:Movie
+  title: aaa
+  director: bbb
+  year: 100
+1: !ruby/object:Movie
+  title: ccc
+  director: ddd
+  year: 200
